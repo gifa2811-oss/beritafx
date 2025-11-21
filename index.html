@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS SCRIPT - Deteksi Berita Hoax Cerdas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-scroll"></i>
+                <h1>NEWS SCRIPT</h1>
+            </div>
+            <p class="tagline">Jadikan dirimu editor, bukan penyebar!</p>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'Verify')"><i class="fas fa-check-circle"></i> Verifikasi Teks</button>
+            <button class="tab-button" onclick="openTab(event, 'Education')"><i class="fas fa-book-open"></i> Kelas Anti-Hoax</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="Verify" class="tab-content active">
+            <h2>🔎 Papan Uji Teks</h2>
+            <p>Salin dan tempel teks berita yang kamu ragukan di kotak bawah ini.</p>
+            
+            <textarea id="newsText" placeholder="Salin dan tempel teks berita di sini..." rows="10"></textarea>
+            
+            <button onclick="checkHoax()"><i class="fas fa-search"></i> Mulai Analisis</button>
+            
+            <div id="result" class="result-box">
+                <p>Hasil analisis leksikal dan struktural akan muncul di sini.</p>
+            </div>
+        </div>
+
+        <div id="Education" class="tab-content">
+            <h2>🧠 4 Jurus Jitu Detektif Berita</h2>
+            <p>Berita palsu itu seperti virus, harus dicegah! Berikut cara mudah melawannya:</p>
+            
+            <div class="education-grid">
+                
+                <div class="card card-tip">
+                    <h3><i class="fas fa-globe"></i> 1. Cek Sumber & Alamat</h3>
+                    <p>**Pertanyaan Kunci:** Apakah situsnya terpercaya? Apakah URL-nya aneh (contoh: `.xyz` atau `.co.tv`)? Situs resmi biasanya rapi dan berbadan hukum.</p>
+                </div>
+                
+                <div class="card card-tip">
+                    <h3><i class="fas fa-exclamation-triangle"></i> 2. Judul Bombastis?</h3>
+                    <p>**Ciri Hoax:** Judul menggunakan kata-kata heboh, provokatif, dan huruf kapital semua. Berita asli cenderung netral dan faktual.
+<button onclick="checkHoax()"><i class="fas fa-search"></i> Mulai Analisis</button>
+<script src="script.js"></script>
